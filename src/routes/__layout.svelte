@@ -10,7 +10,10 @@
 </main>
 
 <footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+	<p>
+		Base: <a href="https://kit.svelte.dev">kit.svelte.dev</a> | Repo:
+		<a href="https://gitlab.com/fubits/sveltekit-endpoint-vs-store">gitlab.com/fubits</a>
+	</p>
 </footer>
 
 <style>
