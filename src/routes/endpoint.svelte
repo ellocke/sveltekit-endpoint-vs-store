@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>Endpoint</title>
 </svelte:head>
 
 <div class="content">
