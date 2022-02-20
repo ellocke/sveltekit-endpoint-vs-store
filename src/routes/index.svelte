@@ -8,7 +8,7 @@
 
 <section>
 	<h1>Payload from Store</h1>
-	<p>Date() as ISO from <code>`src/stores.js`</code>: {$payload}</p>
+	<p>Formatted Date() from <code>`src/stores.js`</code>: {$payload}</p>
 </section>
 
 <style>

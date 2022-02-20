@@ -5,4 +5,6 @@ import {
   formatDate
 } from '$lib/utils/utils';
 
-export const payload = readable(formatDate(new Date()));
+let date = formatDate(new Date())
+
+export const payload = readable(date);
