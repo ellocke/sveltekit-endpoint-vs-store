@@ -1,4 +1,5 @@
 <script context="module">
+	export const hydrate = true;
 	export const prerender = true;
 </script>
 
