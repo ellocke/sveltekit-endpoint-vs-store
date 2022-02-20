@@ -3,9 +3,8 @@
 </script>
 
 <script>
-	export let message;
-	// console.log(typeof message);
-	console.dir(message);
+	export let payload; // from body.payload
+	// $: status = payload ? true : false;
 </script>
 
 <svelte:head>
@@ -13,7 +12,8 @@
 </svelte:head>
 
 <div class="content">
-	<p>{message.joke}</p>
+	<h1>Random Dad Joke from Endpoint</h1>
+	<p>{payload.joke}</p>
 </div>
 
 <style>
