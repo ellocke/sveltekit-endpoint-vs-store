@@ -7,8 +7,8 @@
 </script>
 
 <section>
-	<h1>Payload</h1>
-	<p>{$payload}</p>
+	<h1>Payload from Store</h1>
+	<p>{`Date() as ISO: ${$payload}`}</p>
 </section>
 
 <style>
