@@ -16,6 +16,11 @@
 	<h1>Random Dad Joke from Endpoint</h1>
 	<p>{payload.joke}</p>
 </div>
+<div>
+	<p>
+		API: <a href="https://icanhazdadjoke.com/api#fetch-a-random-dad-joke">icanhazdadjoke</a>
+	</p>
+</div>
 
 <style>
 	.content {
