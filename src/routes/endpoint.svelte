@@ -1,11 +1,11 @@
 <script context="module">
-	export const hydrate = false;
-	export const prerender = false;
+	export const hydrate = false; // no effect?
+	export const prerender = false; // no effect?
 </script>
 
 <script>
-	export let payload; // from body.payload
-	// $: status = payload ? true : false;
+	export let joke; // from body.joke
+	// $: status = joke ? true : false;
 </script>
 
 <svelte:head>
@@ -14,7 +14,7 @@
 
 <div class="content">
 	<h1>Random Dad Joke from Endpoint</h1>
-	<p>{payload.joke}</p>
+	<p>{joke}</p>
 </div>
 <div>
 	<p>

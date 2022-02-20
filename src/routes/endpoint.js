@@ -2,18 +2,17 @@
 
 export async function get() {
 
-  const payload = await fetch('https://icanhazdadjoke.com/', {
-    headers: {
-      Accept: 'application/json'
-    }
-  }).then(res => res.json())
-
-  // console.log(payload)
+  const joke = await fetch('https://icanhazdadjoke.com/', {
+      headers: {
+        Accept: 'application/json'
+      }
+    }).then(res => res.json())
+    .then(data => data.joke)
 
   // status, headers, body are conventions
   return {
     body: {
-      payload
+      joke
     }
   }
 }
