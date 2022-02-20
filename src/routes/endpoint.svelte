@@ -1,6 +1,6 @@
 <script context="module">
-	export const hydrate = false; // no effect?
-	export const prerender = false; // no effect?
+	export const hydrate = true; // no effect in dev
+	export const prerender = true; // no effect in dev
 </script>
 
 <script>
