@@ -8,7 +8,7 @@ The endpoint is in `src/routes/endpoint.js`, the consuming route (page) is in `s
 
 Since we're using [https://kit.svelte.dev/](https://kit.svelte.dev/) here, you might or might not be surprised that whatever is returned by the endpoint, can be prerendered and served "statically".
 
-Compare `src/routes/endpoint.svelte` & `src/routes/endpoint-dyn.svelte`.
+Compare `src/routes/endpoint.svelte` & `src/routes/endpoint-dyn.svelte` and the state of `const prerender = true|false`.
 
 > However, `prerender = true` has no effect in local development!
 
@@ -21,7 +21,3 @@ For comparison, `src/routes/dynamic.svelte` is making an on-demand async fetch r
 - `git clone repo`
 - `npm ci`
 - `npm run dev`
-
-# Static vs Dynamic
-
-cf.
