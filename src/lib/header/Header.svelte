@@ -17,10 +17,13 @@
 		<ul>
 			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">Store</a></li>
 			<li class:active={$page.url.pathname === '/dynamic'}>
-				<a sveltekit:prefetch href="/dynamic">Dynamic</a>
+				<a sveltekit:prefetch href="/dynamic">Fetch</a>
 			</li>
 			<li class:active={$page.url.pathname === '/endpoint'}>
 				<a sveltekit:prefetch href="/endpoint">Endpoint</a>
+			</li>
+			<li class:active={$page.url.pathname === '/endpoint-dyn'}>
+				<a sveltekit:prefetch href="/endpoint-dyn">Endpoint Dyn.</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">

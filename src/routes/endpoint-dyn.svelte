@@ -1,6 +1,6 @@
 <script context="module">
 	export const hydrate = true; // no effect in dev
-	export const prerender = true; // no effect in dev
+	export const prerender = false; // no effect in dev
 </script>
 
 <script>
@@ -14,7 +14,7 @@
 
 <div class="content">
 	<h1>Random Joke from Endpoint</h1>
-	<blockquote>with <code>prerender = true;</code></blockquote>
+	<blockquote>with <code>prerender = false;</code></blockquote>
 	<p><code>Response: </code>{joke}</p>
 </div>
 <div>
