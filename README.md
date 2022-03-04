@@ -1,40 +1,27 @@
-# create-svelte
+# README
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Demo: [https://sveltekit-endpoint-fetch.netlify.app/](https://sveltekit-endpoint-fetch.netlify.app/)
 
-## Creating a project
+This is a minimal exploration of Svelte-Kit's newly added "shadow" [endpoint functionality](https://kit.svelte.dev/docs/routing#endpoints).
 
-If you're seeing this, you've probably already done this step. Congrats!
+The endpoint is in `src/routes/endpoint.js`, the consuming route (page) is in `src/routes/endpoint.svelte`.
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+Since we're using [https://kit.svelte.dev/](https://kit.svelte.dev/) here, you might or might not be surprised that whatever is returned by the endpoint, can be prerendered and served "statically".
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+Compare `src/routes/endpoint.svelte` & `src/routes/endpoint-dyn.svelte`.
 
-> Note: the `@next` is temporary
+> However, `prerender = true` has no effect in local development!
 
-## Developing
+For comparison, `src/routes/dynamic.svelte` is making an on-demand async fetch request to the same API.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+`src/routes/index.svelte` returns a formatted DateTime string from the store (`src/stores.js`). The store imports a module which exports a utility function.
 
-```bash
-npm run dev
+# Quickstart
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+- `git clone repo`
+- `npm ci`
+- `npm run dev`
 
-## Building
+# Static vs Dynamic
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+cf.
