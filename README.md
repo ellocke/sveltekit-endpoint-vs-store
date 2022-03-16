@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a86b9791-8ee8-44c0-9d90-9aac8a7edca1/deploy-status)](https://app.netlify.com/sites/sveltekit-endpoint-fetch/deploys)
+
 # README
 
 Demo: [https://sveltekit-endpoint-fetch.netlify.app/](https://sveltekit-endpoint-fetch.netlify.app/)
